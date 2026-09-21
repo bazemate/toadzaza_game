@@ -49,6 +49,7 @@
     {"id":{"name":"background1","path":"sprites/background1/background1.yy",},},
     {"id":{"name":"background2","path":"sprites/background2/background2.yy",},},
     {"id":{"name":"background3","path":"sprites/background3/background3.yy",},},
+    {"id":{"name":"background4","path":"sprites/background4/background4.yy",},},
     {"id":{"name":"p_dead","path":"sprites/p_dead/p_dead.yy",},},
     {"id":{"name":"p_idle","path":"sprites/p_idle/p_idle.yy",},},
     {"id":{"name":"p_jump","path":"sprites/p_jump/p_jump.yy",},},

@@ -9,6 +9,7 @@ cam = {
 	offsetspeed : 0
 };
 background_map = ds_map_create();
-background_map[? layer_get_id("Background")] = 0.95;
-background_map[? layer_get_id("Backgrounds_1")] = 0.7;
-background_map[? layer_get_id("Backgrounds_2")] = 0.4;
+background_map[? layer_get_id("Background")] = 0.975;
+background_map[? layer_get_id("Backgrounds_1")] = 0.9;
+background_map[? layer_get_id("Backgrounds_2")] = 0.7;
+background_map[? layer_get_id("Backgrounds_3")] = 0.5;
