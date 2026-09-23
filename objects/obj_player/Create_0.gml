@@ -15,6 +15,13 @@ _default =
 enum states {
 	idle,
 	jump,
-	turn
+	turn,
+	bounce,
+	slide
 }
 state = states.idle
+timer = 
+{
+	bounce_anim : 0,
+	slide : 0
+};
