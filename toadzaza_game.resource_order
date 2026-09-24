@@ -1,11 +1,13 @@
 {
   "FolderOrderSettings":[
+    {"name":"tilesets","order":12,"path":"folders/tilesets.yy",},
     {"name":"objects","order":8,"path":"folders/objects.yy",},
     {"name":"scripts","order":7,"path":"folders/scripts.yy",},
     {"name":"sounds","order":10,"path":"folders/sounds.yy",},
     {"name":"sprites","order":9,"path":"folders/sprites.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_block","order":8,"path":"objects/obj_block/obj_block.yy",},
     {"name":"obj_camera","order":2,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_enemy","order":4,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"obj_goomba_death","order":6,"path":"objects/obj_goomba_death/obj_goomba_death.yy",},
@@ -43,10 +45,15 @@
     {"name":"p_slide","order":20,"path":"sprites/p_slide/p_slide.yy",},
     {"name":"p_turn","order":10,"path":"sprites/p_turn/p_turn.yy",},
     {"name":"p_walk","order":8,"path":"sprites/p_walk/p_walk.yy",},
+    {"name":"spr_block_disabled","order":26,"path":"sprites/spr_block_disabled/spr_block_disabled.yy",},
+    {"name":"spr_block_random","order":25,"path":"sprites/spr_block_random/spr_block_random.yy",},
+    {"name":"spr_block","order":24,"path":"sprites/spr_block/spr_block.yy",},
     {"name":"spr_goomba_dead","order":13,"path":"sprites/spr_goomba_dead/spr_goomba_dead.yy",},
     {"name":"spr_goomba_mask","order":14,"path":"sprites/spr_goomba_mask/spr_goomba_mask.yy",},
     {"name":"spr_goomba","order":11,"path":"sprites/spr_goomba/spr_goomba.yy",},
+    {"name":"spr_mushroom","order":23,"path":"sprites/spr_mushroom/spr_mushroom.yy",},
     {"name":"spr_title","order":15,"path":"sprites/spr_title/spr_title.yy",},
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
+    {"name":"tile_overworld","order":22,"path":"sprites/tile_overworld/tile_overworld.yy",},
   ],
 }

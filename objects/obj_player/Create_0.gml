@@ -10,7 +10,7 @@ _default =
 {
 	jump : -5,
 	walk : 2,
-	run : 4
+	run : 3
 }
 enum states {
 	idle,
