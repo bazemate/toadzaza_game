@@ -1,10 +1,10 @@
 {
   "FolderOrderSettings":[
-    {"name":"tilesets","order":12,"path":"folders/tilesets.yy",},
     {"name":"objects","order":8,"path":"folders/objects.yy",},
     {"name":"scripts","order":7,"path":"folders/scripts.yy",},
     {"name":"sounds","order":10,"path":"folders/sounds.yy",},
     {"name":"sprites","order":9,"path":"folders/sprites.yy",},
+    {"name":"tilesets","order":12,"path":"folders/tilesets.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_block","order":8,"path":"objects/obj_block/obj_block.yy",},
@@ -55,5 +55,6 @@
     {"name":"spr_title","order":15,"path":"sprites/spr_title/spr_title.yy",},
     {"name":"spr_wall","order":1,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"tile_overworld","order":22,"path":"sprites/tile_overworld/tile_overworld.yy",},
+    {"name":"victory","order":27,"path":"sprites/victory/victory.yy",},
   ],
 }
