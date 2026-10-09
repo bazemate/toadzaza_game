@@ -27,8 +27,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"sprites",
-    "path":"folders/sprites.yy",
+    "name":"small",
+    "path":"folders/sprites/player/small.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

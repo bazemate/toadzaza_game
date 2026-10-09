@@ -1,17 +1,19 @@
 scr_key_step();
 scr_collision();
 scr_player_timer();
+scr_player_sprite_manager();
 
 move = (keyRight - keyLeft);
-hsp = movespeed * image_xscale;
+if state != states.grow
+	hsp = movespeed * image_xscale;
 
 switch state
 {
 	case states.idle:
 		if movespeed != 0
-			sprite_index = p_walk;
+			sprite_index = s_walk;
 		else
-			sprite_index = p_idle;
+			sprite_index = s_idle;
 			
 		image_speed = (movespeed / 10);
 	
@@ -61,20 +63,20 @@ switch state
 	case states.jump:
 		
 		//temp
-		if sprite_index == p_jump_angle
+		if sprite_index == s_jump_angle
 		{
 			image_angle += 20;
-			sprite_index = p_jump_angle;
-			mask_index = p_jump_mask;
+			sprite_index = s_jump_angle;
+			mask_index = s_jump_mask;
 		}
 		else	
 		{
 			image_angle = 0;
-			sprite_index = p_jump;
-			mask_index = p_mask;
+			sprite_index = s_jump;
+			mask_index = s_mask;
 		}
 		
-		if place_meeting(x + move,y,obj_solid)
+		if place_meeting(x + hsp,y,obj_solid)
 			touched = 1;
 		
 		if (move != 0)
@@ -90,13 +92,13 @@ switch state
 			state = states.idle;
 			touched = 0;
 			image_angle = 0;
-			mask_index = p_mask;
-			if sprite_index == p_jump_angle
+			mask_index = s_mask;
+			if sprite_index == s_jump_angle
 				y = y + 7;
 		}
 		break;
 	case states.turn:
-		sprite_index = p_turn;
+		sprite_index = s_turn;
 		
 		if !audio_is_playing(sfx_stop_start)
 		{
@@ -124,16 +126,16 @@ switch state
 		if !grounded
 		{
 			if timer.bounce_anim == 0
-				sprite_index = p_bounce_loop;
+				sprite_index = s_bounce_loop;
 			else	
-				sprite_index = p_bounce;
+				sprite_index = s_bounce;
 				
 			if keyDown_once
 				vsp /= 40;
 			
 			if keyJump_once
 			{
-				sprite_index = p_jump_angle;
+				sprite_index = s_jump_angle;
 				play_sound(sfx_jump);
 				vsp = (keyRun) ? (_default.jump * 1.25) : _default.jump;
 				state = states.jump;
@@ -147,18 +149,35 @@ switch state
 		}
 		break;
 	case states.slide:
-		sprite_index = p_slide;
+		sprite_index = s_slide;
 		
-		if (!keyDown && timer.slide == 0) || place_meeting(x + image_xscale,y,obj_solid)
+		if (!keyDown && timer.slide == 0) || place_meeting(x + hsp,y,obj_solid)
 			state = states.idle;
 		
 		if keyJump_once
 		{
-			sprite_index = p_jump_angle;
+			sprite_index = s_jump_angle;
 			play_sound(sfx_bounce);
 			play_sound(sfx_jump);
 			vsp = (keyRun) ? (_default.jump * 1.25) : _default.jump;
 			state = states.jump;
 		}
+		break;
+	case states.grow:
+		hsp = 0
+		vsp = 0
+		grav = 0
+		
+		if (image_index >= image_number - 1)
+		    image_speed = 0
+		else 
+			image_speed = 0.4;
+		
+		if !audio_is_playing(sfx_hpup)
+		{
+			state = states.idle;
+			grav = 0.2
+		}
+		
 		break;
 }
