@@ -12,7 +12,7 @@ for(var i = 0; i < 6; i++)
 
 	draw_text(24 + (8 * i), 24, score_cur_index);
 }
-draw_sprite_ext(spr_coin,image_index,89,20,0.4,0.5,0,c_white,1)
+draw_sprite(spr_coin_small,0,89,24)
 if global.coins >= 10
 	draw_text(104,24,string_concat("X",global.coins));
 else

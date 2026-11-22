@@ -206,6 +206,7 @@ switch state
 		break;
 		
 	case states.finish:
+		mask_index = s_mask
 		switch finish_anim
 		{
 			case 0:
@@ -244,7 +245,7 @@ switch state
 				if (image_index >= image_number - 1)
 				    image_speed = 0
 				else 
-					image_speed = 0.4;
+					image_speed = 0.6;
 				if timer.finish == 0
 				{
 					timer.finish = 40;
@@ -264,11 +265,17 @@ switch state
 			case 5:
 				hsp = 0
 				visible = false;
+				if timer.finish == 0
+				{
+					timer.finish = 200;
+					finish_anim += 1;
+				}
+				break;
+			case 6:
+				if timer.finish == 0
+					game_restart();
 				break;
 		}
-
-		
-		
 		break;
 }
 

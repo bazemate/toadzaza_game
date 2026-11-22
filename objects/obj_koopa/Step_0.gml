@@ -11,7 +11,7 @@ if global.stop == false
 	{
 		if obj_player.state != states.grow || obj_player.state != states.shrink
 		{
-			if place_meeting(x,y - 1,obj_player) && obj_player.state == states.jump
+			if place_meeting(x,y - 1,obj_player) && !obj_player.grounded
 			{
 				with obj_player
 					vsp = keyJump ? -12 : -7;

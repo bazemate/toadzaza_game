@@ -8,7 +8,7 @@ switch state
 	case 0:
 		hsp = 0
 		
-		if place_meeting(x,y,obj_player)
+		if place_meeting(x,y,obj_player) 
 		{
 			with obj_player
 				vsp = keyJump ? -7 : -4;
@@ -28,7 +28,7 @@ switch state
 		{
 			if obj_player.state != states.grow || obj_player.state != states.shrink
 			{
-				if place_meeting(x,y - 1,obj_player) && obj_player.state == states.jump
+				if place_meeting(x,y - 1,obj_player) && !obj_player.grounded
 				{
 					with obj_player
 					vsp = keyJump ? -7 : -4;

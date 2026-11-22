@@ -54,6 +54,7 @@
     {"id":{"name":"obj_silent_gameover","path":"objects/obj_silent_gameover/obj_silent_gameover.yy",},},
     {"id":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
+    {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"id":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"id":{"name":"world1_1","path":"rooms/world1_1/world1_1.yy",},},
@@ -124,6 +125,7 @@
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
     {"id":{"name":"spr_blood_small","path":"sprites/spr_blood_small/spr_blood_small.yy",},},
     {"id":{"name":"spr_blood","path":"sprites/spr_blood/spr_blood.yy",},},
+    {"id":{"name":"spr_coin_small","path":"sprites/spr_coin_small/spr_coin_small.yy",},},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},
     {"id":{"name":"spr_font","path":"sprites/spr_font/spr_font.yy",},},
     {"id":{"name":"spr_giraffe_mask","path":"sprites/spr_giraffe_mask/spr_giraffe_mask.yy",},},
@@ -149,6 +151,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"world1_1","path":"rooms/world1_1/world1_1.yy",},},
     {"roomId":{"name":"rm_intro","path":"rooms/rm_intro/rm_intro.yy",},},
