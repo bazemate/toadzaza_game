@@ -3,6 +3,7 @@
   "%Name":"obj_goomba",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_goomba",
@@ -36,6 +37,9 @@
     "name":"spr_goomba",
     "path":"sprites/spr_goomba/spr_goomba.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_goomba_mask",
+    "path":"sprites/spr_goomba_mask/spr_goomba_mask.yy",
+  },
   "visible":true,
 }

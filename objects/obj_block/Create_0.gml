@@ -1,3 +1,4 @@
+depth = 1
 fake_y = y;
 bump = 2;
 block_xscale = 1;

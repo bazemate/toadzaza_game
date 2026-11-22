@@ -15,6 +15,7 @@ function scr_player_sprite_create()
 	s_turn = p_turn
 	s_mask = p_mask
 	s_jump_mask = p_jump_mask
+	s_finish = p_finish
 }
 
 
@@ -32,6 +33,7 @@ function scr_player_sprite_manager()
 		s_turn = p_turn_big
 		s_mask = p_mask_big
 		s_jump_mask = p_jump_mask_big
+		s_finish = p_finish_big
 	} 
 	else 
 	{
@@ -45,5 +47,6 @@ function scr_player_sprite_manager()
 		s_turn = p_turn	
 		s_mask = p_mask
 		s_jump_mask = p_jump_mask
+		s_finish = p_finish
 	}
 }

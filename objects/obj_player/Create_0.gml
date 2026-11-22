@@ -8,6 +8,7 @@ depth = 1;
 _direction = 1;
 touched = 0;
 hp = 1;
+finish_anim = 0;
 _default =
 {
 	jump : -5,
@@ -20,11 +21,16 @@ enum states {
 	turn,
 	bounce,
 	slide,
-	grow
+	grow,
+	shrink,
+	finish,
+	finishprep
 }
 state = states.idle
 timer = 
 {
 	bounce_anim : 0,
-	slide : 0
+	slide : 0,
+	inv : 0,
+	finish : 0
 };

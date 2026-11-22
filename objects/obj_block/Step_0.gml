@@ -5,17 +5,34 @@ if bump == 2
 	{
 		if obj_player.state == states.jump
 		{
-			with obj_player
-				vsp /= 20;
-			bump = -2;
-			frame = 0
-			play_sound(sfx_bump)
-			if place_meeting(x,y - 1,shroom_id)
+			if obj_player.hp != 2
 			{
-				with shroom_id
+				with obj_player
+					vsp /= 20;
+				bump = -2;
+				frame = 0
+				play_sound(sfx_bump)
+				if place_meeting(x,y - 1,shroom_id)
 				{
-					vsp = -4;
+					with shroom_id
+						vsp = -4;
 				}
+			}
+			else
+			{
+				with obj_player
+					vsp /= 20;
+				
+				if audio_is_playing(sfx_break)
+					audio_stop_sound(sfx_break)
+				
+				global.highscore += 40
+				
+				with instance_create_depth(x,y,depth,obj_scoretext)
+					score_text = 40;
+				
+				play_sound_pitch(sfx_break,random_range(0.9,1.1),false,0.6)
+				instance_destroy(self)
 			}
 		}
 	}

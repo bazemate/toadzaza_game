@@ -28,18 +28,16 @@ switch state
 				shroom_id = noone
 		}
 		
-		
-		if place_meeting(x,y,obj_player)
-		{
-			with obj_player	
-			{
-				hp += 1;
-				image_index = 0
-				state = states.grow;
-				sprite_index = p_grow;
-			}
-			play_sound(sfx_hpup,false,1)
-			instance_destroy(self);
-		}
 		break;
 }
+
+if state != 0
+{
+	if state == 1
+	{
+		if y == (ystart - 16)
+			meet_player();
+	}
+	else
+		meet_player();
+}	

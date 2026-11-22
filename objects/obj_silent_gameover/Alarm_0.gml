@@ -1,0 +1,1 @@
+play_sound(sfx_death_jingle);
