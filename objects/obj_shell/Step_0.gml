@@ -26,7 +26,7 @@ switch state
 		
 		if place_meeting(x,y,obj_player) && stomp_timer == 0
 		{
-			if obj_player.state != states.grow || obj_player.state != states.shrink
+			if obj_player.state != states.grow && obj_player.state != states.shrink
 			{
 				if place_meeting(x,y - 1,obj_player) && !obj_player.grounded
 				{
