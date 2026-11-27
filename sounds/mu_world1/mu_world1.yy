@@ -6,11 +6,11 @@
     "path":"audiogroups/audiogroup_default",
   },
   "bitDepth":1,
-  "channelFormat":0,
-  "compression":0,
-  "compressionQuality":4,
+  "channelFormat":1,
+  "compression":2,
+  "compressionQuality":10,
   "conversionMode":0,
-  "duration":50.0,
+  "duration":264.11655,
   "exportDir":"",
   "name":"mu_world1",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mu_world1.wav",
+  "soundFile":"mu_world1.mp3",
   "volume":1.0,
 }

@@ -7,10 +7,10 @@
   },
   "bitDepth":1,
   "channelFormat":0,
-  "compression":0,
-  "compressionQuality":4,
+  "compression":2,
+  "compressionQuality":10,
   "conversionMode":0,
-  "duration":3.2914286,
+  "duration":4.114286,
   "exportDir":"",
   "name":"mu_complete",
   "parent":{
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"mu_complete.mp3",
+  "soundFile":"mu_complete.wav",
   "volume":1.0,
 }

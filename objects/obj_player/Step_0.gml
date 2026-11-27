@@ -88,6 +88,9 @@ switch state
 			if move != 0
 				image_xscale = move;
 			
+			if move == image_xscale && (sign(movespeed) == -1)
+				movespeed = -movespeed;
+			
 			if move == -image_xscale
 				movespeed = -movespeed;
 		}

@@ -1,1 +1,1 @@
-audio_play_sound(mu_world1,10,true,0.5)
+audio_play_sound(mu_world2,10,true,0.5)
